@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas | Kyoto Tour</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">Kyoto Tour</a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="index.html">Início</a>
+                        <a class="nav-link active" href="reservas.html">Reservas</a>
+                        <a class="nav-link" href='./dicas.html'>Dicas</a>
+                        <a class="nav-link" href='./faleconosco.html'>Fale conosco</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="reserva-banner">
+            <div class="container">
+                <h1>Faça sua reserva!</h1>
+                <p>Prepare-se para conhecer as maravilhas de Kyoto, no Japão.</p>
+            </div>
+        </section>
+
+        <section class="container my-5">
+
+            <div class="text-center mb-4">
+                <h2>Reserve sua viagem</h2>
+                <p>Preencha os campos abaixo para planejar sua próxima aventura.</p>
+            </div>
+
+            <div class="card reserva-card mx-auto">
+                <div class="card-body p-4">
+
+                    <form id="formReserva">
+
+                        <h5 class="mb-3">Informações da viagem</h5>
+
+                        <div class="row g-3">
+
+                            <div class="col-md-12">
+                                <label class="form-label">Destino</label>
+                                <select class="form-select" required>
+                                    <option value="">Selecione seu destino</option>
+                                    <option>Floresta de Bambus de Arashiyama</option>
+                                    <option>Santuário Fushimi Inari</option>
+                                    <option>Templo Kiyomizu-dera</option>
+                                    <option>Templo Tenryu-ji</option>
+                                    <option>Santuário de Yasaka</option>
+                                    <option>Rio Kamogawa</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Data de ida</label>
+                                <input type="date" class="form-control" id="dataIda" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Data de volta</label>
+                                <input type="date" class="form-control" id="dataVolta" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Quantidade de passageiros</label>
+                                <select class="form-select" required>
+                                    <option value="">Selecione</option>
+                                    <option>1 passageiro</option>
+                                    <option>2 passageiros</option>
+                                    <option>3 passageiros</option>
+                                    <option>4 passageiros</option>
+                                    <option>5 ou mais passageiros</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Tipo de viagem</label>
+                                <select class="form-select" required>
+                                    <option value="">Selecione</option>
+                                    <option>Individual</option>
+                                    <option>Casal</option>
+                                    <option>Família</option>
+                                    <option>Grupo</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <hr class="my-4">
+
+                        <h5 class="mb-3">Dados do responsável</h5>
+
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <label class="form-label">Nome completo</label>
+                                <input type="text" class="form-control"
+                                    placeholder="Digite seu nome" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">CPF</label>
+                                <input type="text" class="form-control"
+                                    placeholder="000.000.000-00" maxlength="14" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">E-mail</label>
+                                <input type="email" class="form-control"
+                                    placeholder="seuemail@email.com" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Telefone</label>
+                                <input type="tel" class="form-control"
+                                    placeholder="(00) 00000-0000" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">Observações adicionais</label>
+                                <textarea class="form-control" rows="4"
+                                    placeholder="Digite alguma preferência ou informação importante"></textarea>
+                            </div>
+
+                        </div>
+
+                        <div class="form-check mt-4">
+                            <input class="form-check-input" type="checkbox"
+                                id="termos" required>
+                            <label class="form-check-label" for="termos">
+                                Confirmo que os dados informados estão corretos.
+                            </label>
+                        </div>
+
+                        <div class="d-grid mt-4">
+                            <button type="submit" class="btn btn-reservar">
+                                Confirmar reserva
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; Todos os direitos reservados - Kyoto Tour.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="reservas.js"></script>
+
+</body>
+</html>

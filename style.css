@@ -6,7 +6,6 @@
     margin: 0 auto;
 }
  
- 
   .card {
  
     height: 100%;
@@ -21,9 +20,7 @@
 footer{
     text-align: center;
 }
- 
-/* Caixa principal do Modal */
- 
+  
 .modal-content {
  
 border: none;
@@ -31,43 +28,22 @@ border: none;
 border-radius: 18px;
  
 overflow: hidden;
- 
- 
- 
-/* Sombra ao redor da janela */
- 
+  
 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
  
 }
- 
- 
- 
-/* -----------------------------------------------------
- 
-CABEÇALHO DO MODAL
- 
------------------------------------------------------ */
+
  
 .modal-header {
  
 padding: 20px 25px;
  
- 
- 
-/* Remove a linha padrão do Bootstrap */
- 
 border-bottom: none;
- 
- 
  
 background-color: #e21818;
  
 }
- 
- 
- 
-/* Título do Modal */
- 
+  
 .modal-title {
  
 font-size: 1.5rem;
@@ -75,9 +51,7 @@ font-size: 1.5rem;
 font-weight: 700;
  
 }
- 
-/* Corpo do Modal */
- 
+  
 .modal-body {
  
 padding: 30px;
@@ -86,11 +60,7 @@ font-size: 1rem;
  
 line-height: 1.7;
 }
- 
- 
- 
-/* Imagem dentro do Modal */
- 
+  
 .modal-body img {
  
 width: 100%;
@@ -102,8 +72,6 @@ margin-bottom: 20px;
 }
  
  
-/* Rodapé do Modal */
- 
 .modal-footer {
 padding: 15px 25px;
  
@@ -112,10 +80,7 @@ border-top: none;
 background-color: #f8f9fa;
  
 }
- 
- 
-/* Botões do Modal */
- 
+  
 .modal .btn {
  
 border-radius: 8px;
@@ -124,136 +89,73 @@ padding: 8px 20px;
  
 }
  
-/* -----------------------------------------------------
- 
-CAIXA PRINCIPAL
- 
------------------------------------------------------ */
-/* Cria uma caixa separada para o Accordion. O max-width evita que fique muito largo. */
- 
 .faq-box {
  
 max-width: 850px;
- 
-  /* Centraliza a caixa */
- 
+  
 margin: 0 auto;
- 
-  /* Espaçamento interno */
- 
+  
 padding: 35px;
- 
-  /* Fundo da caixa */
- 
+  
 background-color: #ffffff;
- 
-  /* Cantos arredondados */
- 
+  
 border-radius: 18px;
- 
-/* Borda */
-border: 1px solid #fdfdfd;
- 
-  /* Sombra para criar sensação de elevação */
- 
-  box-shadow: 0 8px 25px rgba(16, 91, 196, 0.12);
+ border: 1px solid #fdfdfd;
+  
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
  
-/* -----------------------------------------------------
- 
-ÁREA DO ACCORDION
- 
------------------------------------------------------ */
  
 .faq-box .accordion {
 width: 100%;
 }
-/* -----------------------------------------------------
-CADA PERGUNTA
------------------------------------------------------ */
- 
+
 .faq-box .accordion-item {
- 
-  /* Remove a borda padrão */
-border: none;
- 
-  /* Espaço entre as perguntas */
- 
+ border: none;
+  
 margin-bottom: 15px;
- 
-  /* Arredonda cada "gaveta" */
- 
+  
 border-radius: 12px;
- 
-  /* Mantém o conteúdo dentro do arredondamento */
- 
+  
 overflow: hidden;
- 
-  /* Pequena sombra em cada item */
- 
+  
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
  
 }
- 
-/* EFEITO AO CLICAR */
- 
-/* Remove o contorno padrão que aparece quando o botão recebe foco. */
- 
+   
 .faq-box .accordion-button:focus {
  
 box-shadow: none;
  
 }
  
- 
- 
-/* ÁREA DA RESPOSTA */
- 
+  
 .faq-box .accordion-body {
- 
-  /* Espaçamento interno maior */
- 
+  
 padding: 25px;
- 
-  /* Espaçamento entre linhas */
- 
+  
 line-height: 1.7;
- 
-  /* Fundo da resposta */
- 
+  
 background-color: #ffffff;
  
 }
- 
-/* BOTÃO DA PERGUNTA */
- 
+  
 .faq-box .accordion-button {
- 
-  /* Espaçamento interno */
- 
+  
   padding: 20px 22px;
- 
-  /* Tamanho do texto */
- 
+  
   font-size: 1rem;
- 
-  /* Deixa a pergunta em destaque */
- 
+  
   font-weight: 600;
- 
-  /* Cor de fundo */
- 
+  
   background-color: #f8f9fa;
  
 }
  
  
- 
-/* PERGUNTA ABERTA */
- 
 .faq-box .accordion-button:not(.collapsed) {
  
-  background-color: #0d3f71;
+  background-color: #000000;
  
 }
 
@@ -318,4 +220,581 @@ background-color: #ffffff;
 .carousel-caption h2,
 .carousel-caption p {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+
+body:has(.reserva-banner) {
+  background-color: #fff8ed;
+}
+
+.reserva-banner {
+  background-image:
+      linear-gradient(
+          rgba(0, 0, 0, 0.40),
+          rgba(0, 0, 0, 0.40)
+      ),
+      url("assets/fushimiinari.jpg");
+
+  background-size: cover;
+  background-position: center;
+  padding: 110px 20px;
+  text-align: center;
+  color: white;
+}
+
+.reserva-banner h1 {
+  font-size: 46px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.reserva-banner p {
+  font-size: 19px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+}
+
+.reserva-banner h1 {
+  font-size: 46px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.reserva-banner p {
+  font-size: 19px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.reserva-card h2,
+.reserva-card h3,
+.reserva-card h4,
+.reserva-card h5 {
+  color: #000000;
+  font-weight: bold;
+}
+
+.reserva-card {
+  max-width: 850px;
+  margin: 0 auto;
+  background: linear-gradient(
+      145deg,
+      #ffffff,
+      #fffaf0
+  );
+  border: none;
+  border-top: 6px solid #e21818;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(226, 24, 24, 0.12);
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.reserva-card:hover {
+  transform: translateY(-3px);
+}
+
+.reserva-card .card-body {
+  padding: 35px;
+}
+
+.reserva-card .form-label {
+  color: #188727;
+  font-weight: 700;
+}
+
+.reserva-card .form-control,
+.reserva-card .form-select {
+  background-color: #fffdf8;
+  border: 1px solid #e5c302;
+  border-radius: 8px;
+  padding: 11px;
+  transition: 0.3s;
+}
+
+.reserva-card .form-control:focus,
+.reserva-card .form-select:focus {
+  border-color: #188727;
+  box-shadow: 0 0 8px rgba(24, 135, 39, 0.2);
+}
+
+.reserva-card hr {
+  border-top: 2px dashed #e5c302;
+  opacity: 0.8;
+}
+
+.reserva-card .form-check-input:checked {
+  background-color: #188727;
+  border-color: #188727;
+}
+
+.reserva-card .form-check-label {
+  color: #444;
+}
+
+.btn-reservar {
+  background-color: #e21818;
+  border: 1px solid #e21818;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 13px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.btn-reservar:hover {
+  background-color: #b81414;
+  border-color: #b81414;
+  color: white;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+
+  .reserva-banner {
+      padding: 70px 15px;
+  }
+
+  .reserva-banner h1 {
+      font-size: 30px;
+  }
+
+  .reserva-banner p {
+      font-size: 16px;
+  }
+
+  .reserva-card .card-body {
+      padding: 22px;
+  }
+}
+
+
+body:has(.dicas-banner) {
+  background-color: #fff8ed;
+}
+
+.dicas-banner {
+  background-image:
+      linear-gradient(
+          rgba(0, 0, 0, 0.40),
+          rgba(0, 0, 0, 0.40)
+      ),
+      url("assets/riokamo.jpg");
+
+  background-size: cover;
+  background-position: center;
+  padding: 110px 20px;
+  text-align: center;
+  color: white;
+}
+
+.dicas-banner h1 {
+  font-size: 46px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.dicas-banner p {
+  font-size: 19px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+body:has(.dicas-banner) main h2 {
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+body:has(.dicas-banner) main p {
+  line-height: 1.7;
+}
+
+body:has(.dicas-banner) .card {
+  height: 100%;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+  transition: 0.3s;
+}
+
+body:has(.dicas-banner) .card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.16);
+}
+
+body:has(.dicas-banner) .card-img-top {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+body:has(.dicas-banner) .col-md-4:nth-child(3n+1) .card {
+  border-top: 5px solid #e21818;
+}
+
+body:has(.dicas-banner) .col-md-4:nth-child(3n+2) .card {
+  border-top: 5px solid #188727;
+}
+
+body:has(.dicas-banner) .col-md-4:nth-child(3n) .card {
+  border-top: 5px solid #e5c302;
+}
+
+body:has(.dicas-banner) .card-body {
+  padding: 22px;
+}
+
+body:has(.dicas-banner) .card-title {
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+body:has(.dicas-banner) .card-text {
+  color: #555;
+}
+
+#accordionDicas {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+#accordionDicas .accordion-item {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+#accordionDicas .accordion-button {
+  padding: 20px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #f8f9fa;
+  color: #000000;
+}
+
+#accordionDicas .accordion-button:focus {
+  box-shadow: none;
+}
+
+#accordionDicas .accordion-button:not(.collapsed) {
+  background-color: #000000;
+  color: white;
+}
+
+#accordionDicas .accordion-body {
+  background-color: white;
+  padding: 25px;
+  line-height: 1.7;
+  color: #444;
+}
+
+body:has(.dicas-banner) main .btn-primary {
+  background-color: #e21818;
+  border-color: #e21818;
+  color: white;
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+body:has(.dicas-banner) main .btn-primary:hover {
+  background-color: #b81414;
+  border-color: #b81414;
+  color: white;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+
+  .dicas-banner {
+      padding: 70px 15px;
+  }
+
+  .dicas-banner h1 {
+      font-size: 30px;
+  }
+
+  .dicas-banner p {
+      font-size: 16px;
+  }
+
+  body:has(.dicas-banner) .card-img-top {
+      height: 210px;
+  }
+
+  body:has(.dicas-banner) .card-body {
+      padding: 18px;
+  }
+
+  #accordionDicas .accordion-button {
+      padding: 16px;
+  }
+}
+
+
+body:has(.contato-banner) {
+  background-color: #fff8ed;
+}
+
+.contato-banner {
+  background-image:
+      linear-gradient(
+          rgba(0, 0, 0, 0.40),
+          rgba(0, 0, 0, 0.40)
+      ),
+      url("./assets/tenryuij.jpg");
+
+  background-size: cover;
+  background-position: center;
+  padding: 110px 20px;
+  text-align: center;
+  color: white;
+}
+
+.contato-banner h1 {
+  font-size: 46px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.contato-banner p {
+  font-size: 19px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+body:has(.contato-banner) main h2 {
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+body:has(.contato-banner) main p {
+  line-height: 1.7;
+}
+
+.contato-card {
+  background: linear-gradient(
+      145deg,
+      #ffffff,
+      #fffaf0
+  );
+  border: none;
+  border-top: 6px solid #188727;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  padding: 30px;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.contato-card:hover {
+  transform: translateY(-5px);
+}
+
+.contato-card h3,
+.contato-card h4,
+.contato-card h5 {
+  color: #000000;
+  font-weight: bold;
+}
+
+.contato-card p {
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.contato-card a {
+  color: #188727;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contato-card a:hover {
+  color: #115b1b;
+  text-decoration: underline;
+}
+
+body:has(.contato-banner) .card {
+  border: none;
+  border-top: 6px solid #e21818;
+  border-radius: 18px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 25px rgba(226, 24, 24, 0.12);
+  overflow: hidden;
+}
+
+body:has(.contato-banner) .card-body {
+  padding: 35px;
+}
+
+body:has(.contato-banner) .form-label {
+  color: #188727;
+  font-weight: 700;
+}
+
+body:has(.contato-banner) .form-control,
+body:has(.contato-banner) .form-select {
+  background-color: #fffdf8;
+  border: 1px solid #e5c302;
+  border-radius: 8px;
+  padding: 11px;
+  transition: 0.3s;
+}
+
+body:has(.contato-banner) .form-control:focus,
+body:has(.contato-banner) .form-select:focus {
+  border-color: #188727;
+  box-shadow: 0 0 8px rgba(24, 135, 39, 0.2);
+}
+
+body:has(.contato-banner) .btn-primary {
+  background-color: #e21818;
+  border: 1px solid #e21818;
+  color: white;
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+body:has(.contato-banner) .btn-primary:hover {
+  background-color: #b81414;
+  border-color: #b81414;
+  color: white;
+  transform: translateY(-3px);
+}
+
+body:has(.contato-banner) .btn-conhecer1 {
+  background-color: #e21818;
+  border-color: #e21818;
+  color: white;
+}
+
+body:has(.contato-banner) .btn-conhecer1:hover {
+  background-color: #b81414;
+  border-color: #b81414;
+  color: white;
+}
+
+@media (max-width: 768px) {
+
+  .contato-banner {
+      padding: 70px 15px;
+  }
+
+  .contato-banner h1 {
+      font-size: 30px;
+  }
+
+  .contato-banner p {
+      font-size: 16px;
+  }
+
+  .contato-card {
+      padding: 22px;
+  }
+
+  body:has(.contato-banner) .card-body {
+      padding: 22px;
+  }
+}
+
+.navbar.bg-dark {
+  background-color: #000000 !important;
+  padding: 16px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.18);
+}
+
+.navbar .navbar-brand {
+  color: #ffffff !important;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.navbar .navbar-brand:hover {
+  color: #e5c302 !important;
+}
+
+.navbar .nav-link {
+  color: #ffffff !important;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 16px !important;
+  margin: 0 3px;
+  position: relative;
+  transition: 0.3s;
+}
+.navbar .nav-link:hover {
+  color: #e21818 !important;
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #e21818;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.navbar .nav-link:hover::after {
+  width: 65%;
+}
+
+.navbar .nav-link.active {
+  color: #e21818 !important;
+}
+
+.navbar .nav-link.active::after {
+  width: 65%;
+  background-color: #e21818;
+}
+
+.navbar .navbar-toggler {
+  border: 2px solid #e21818;
+  border-radius: 8px;
+  padding: 7px 10px;
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: 0 0 6px rgba(229, 195, 2, 0.5);
+}
+
+@media (max-width: 991px) {
+
+  .navbar .navbar-nav {
+      padding-top: 15px;
+  }
+
+  .navbar .nav-link {
+      padding: 12px 10px !important;
+      margin: 2px 0;
+  }
+
+  .navbar .nav-link::after {
+      left: 10px;
+      transform: none;
+  }
+
+  .navbar .nav-link:hover::after,
+  .navbar .nav-link.active::after {
+      width: 45px;
+  }
 }
